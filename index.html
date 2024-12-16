@@ -35,7 +35,7 @@
         <!-- lg:get to inital document flow: static -->
         <div
           id="nav-menu"
-          class="absolute lg:static top-0 left-[-100%] min-h-[80vh] lg:min-h-fit w-full lg:w-auto bg-green-950/80 lg:bg-transparent backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden"
+          class="absolute lg:static top-0 left-[-100%] min-h-[80vh] lg:min-h-fit w-full lg:w-auto bg-green-950/80 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-0 flex items-center justify-center duration-300 overflow-hidden"
         >
           <ul class="flex flex-col gap-8 lg:flex-row">
             <li><a href="#home" class="nav-link">Home</a></li>
@@ -71,7 +71,86 @@
     <!-- Main -->
     <main>
       <!-- Home -->
-      <section id="home"></section>
+      <section id="home">
+        <!-- Hero Container -->
+        <div class="container">
+          <!-- Hero Flex Container -->
+          <div class="flex flex-col lg:flex-row items-center gap-5">
+            <!--  Content -->
+            <div class="w-full space-y-5 lg:w-1/2">
+              <!-- Hero Heading -->
+              <h1>
+                <span class="text-yellow-500">Plants</span> make a <br />
+                positive
+                <span class="text-yellow-500">impact</span> on <br />
+                your environment
+              </h1>
+              <p class="text-slate-300 font-lobster">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Distinctio fugiat eveniet, reprehenderit veritatis aut explicabo
+                voluptatum ullam itaque tenetur numquam!
+              </p>
+
+              <!-- Buttons: shop & learn more -->
+              <div
+                class="flex flex-col gap-2 md:flex-row md:gap-4 lg:pt-5 xl:pt-10"
+              >
+                <button class="btn">
+                  <span>Shop Now</span>
+                  <i class="ri-leaf-line"></i>
+                </button>
+                <button class="btn btn_outline">
+                  <span>Learn More</span>
+                  <i class="ri-leaf-line"></i>
+                </button>
+              </div>
+
+              <!-- Free Trail -->
+              <p class="text-slate-300 font-lobster">
+                You will get 30 days free trail.
+              </p>
+
+              <!-- Social Icons -->
+              <div class="flex items-center gap-5 text-lg lg:pt-5 xl:pt-10">
+                <i
+                  class="ri-facebook-fill hover:text-yellow-400 duration-300 cursor-pointer hover:scale-95"
+                ></i>
+                <i
+                  class="ri-twitter-x-line hover:text-yellow-400 duration-300 cursor-pointer hover:scale-95"
+                ></i>
+                <i
+                  class="ri-instagram-line hover:text-yellow-400 duration-300 cursor-pointer hover:scale-95"
+                ></i>
+                <i
+                  class="ri-linkedin-fill hover:text-yellow-400 duration-300 cursor-pointer hover:scale-95"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="w-full relative lg:w-1/2">
+              <img src="assets/img/home.png" alt="home_image" />
+
+              <!-- leaf -->
+              <div class="absolute top-0 right-0 opacity-30 animate-movingY">
+                <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+              </div>
+              <!-- flower -->
+              <div
+                class="absolute bottom-0 left-0-0 opacity-30 animate-rotating"
+              >
+                <i class="ri-flower-line text-6xl text-yellow-500"></i>
+              </div>
+              <!-- plant -->
+              <div
+                class="hidden lg:block absolute -top-10 -left-5 opacity-30 animate-scaleUp"
+              >
+                <i class="ri-plant-line text-6xl text-yellow-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Services -->
       <section id="services"></section>
