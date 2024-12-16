@@ -20,12 +20,53 @@
     <!-- Swiper's CSS -->
 
     <!-- Title -->
-    <title>TailSprout</title>
+    <title>TailSprouts.</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header id="navbar"></header>
+    <header id="navbar" class="fixed w-full top-0 left-0 z-50">
+      <!-- Navbar -->
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <!-- logo -->
+        <div class="font-lobster sm:text-2xl">TailSprouts.</div>
+
+        <!-- nav items -->
+        <!-- lg:get to inital document flow: static -->
+        <div
+          id="nav-menu"
+          class="absolute lg:static top-0 left-[-100%] min-h-[80vh] lg:min-h-fit w-full lg:w-auto bg-green-950/80 lg:bg-transparent backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden"
+        >
+          <ul class="flex flex-col gap-8 lg:flex-row">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#popular" class="nav-link">Popular</a></li>
+            <li><a href="#review" class="nav-link">Review</a></li>
+          </ul>
+
+          <div class="absolute -right-10 bottom-5">
+            <img
+              src="assets/img/leaf-1.png"
+              alt="leaf_image"
+              class="w-32 lg:hidden"
+            />
+          </div>
+          <div class="absolute -top-5 -left-0 rotate-90">
+            <img
+              src="assets/img/leaf-2.png"
+              alt="leaf_image"
+              class="w-32 lg:hidden"
+            />
+          </div>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <!-- lg:hidden -->
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+          <i class="ri-menu-4-line" id="hamburger"> </i>
+        </div>
+      </nav>
+    </header>
 
     <!-- Main -->
     <main>
@@ -65,5 +106,6 @@
     <!-- ScrollReveal -->
 
     <!-- mainjs -->
+    <script src="main.js"></script>
   </body>
 </html>
