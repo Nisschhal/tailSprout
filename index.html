@@ -18,6 +18,10 @@
     />
 
     <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Title -->
     <title>TailSprouts.</title>
@@ -161,7 +165,7 @@
         </div>
       </section>
 
-      <!-- ------------ Services----------------- -->
+      <!-- ------------ SERVICES----------------- -->
       <section id="services" class="bg-white text-green-900 py-20">
         <div
           class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4"
@@ -238,7 +242,7 @@
         </div>
       </section>
 
-      <!-- About Us -->
+      <!-- ABOUT US -->
       <section id="about" class="relative overflow-hidden">
         <!-- Corner Leaf -->
         <div class="absolute -top-6 -right-12 opacity-50">
@@ -249,6 +253,7 @@
           />
         </div>
 
+        <!-- About__Heading -->
         <div
           class="flex flex-col items-center gap-3 text-center mb-10 md:mb:20"
         >
@@ -322,7 +327,7 @@
         </div>
       </section>
 
-      <!-- Popular -->
+      <!-- POPULAR -->
       <section id="popular" class="bg-green-900">
         <!-- Popular__Heading -->
         <div class="flex flex-col items-center gap-3 text-center mb-40">
@@ -459,8 +464,142 @@
         </div>
       </section>
 
-      <!-- Review -->
-      <section id="review"></section>
+      <!-- REVIEW -->
+      <section id="review " class="relative mb-20 md:mb-28 overflow-hidden">
+        <!-- Review Corner floating leaf -->
+
+        <div class="absolute -top-6 -left-12 opacity-50">
+          <img
+            src="assets/img/leaf-4.png"
+            alt="leaf_image"
+            class="w-40 md:w-52 lg:w-62"
+          />
+        </div>
+        <!-- Review__Heading  -->
+        <div
+          class="flex flex-col items-center gap-3 text-center mb-10 md:mb:20"
+        >
+          <h2 class="title">Customer Reviews</h2>
+          <p class="max-w-2xl">Your Home, Our Plants, Perfect Harmony</p>
+        </div>
+
+        <!-- SWIPER -->
+        <!-- Review__Container -->
+        <div class="container">
+          <!-- Review__Container_Content -->
+          <div class="py-12">
+            <!-- container-content | swiper container-->
+            <div class="swiper py-12">
+              <!-- swiper wrapper -->
+              <ul class="swiper-wrapper">
+                <!-- Review 1 | swiper-slide -->
+                <li class="swiper-slide">
+                  <!-- Review 1 Container -->
+                  <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                    <!-- Review Comment -->
+                    <p class="font-lobster">
+                      The plants arrived in perfect condition, and the
+                      eco-friendly packaging was a bonus. My fiddle leaf fig
+                      looks stunning in my living room!”
+                    </p>
+                    <!-- Reviewer - image -->
+                    <div class="flex items-center">
+                      <img
+                        src="assets/img/review-1.jpg"
+                        alt="review_image"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <!-- Reviewer Name and Profession -->
+                      <div class="ml-2">
+                        <p class="text-yellow-500 uppercase">Babita Thapa</p>
+                        <p>Designer</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                </li>
+                <!-- Review 2 | swiper-slide -->
+                <li class="swiper-slide">
+                  <!-- Review 2 Container -->
+                  <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                    <!-- Review Comment -->
+                    <p class="font-lobster">
+                      Great quality plants and super helpful care tips. My
+                      monstera is thriving, and I couldn’t be happier!
+                    </p>
+                    <!-- Reviewer - image -->
+                    <div class="flex items-center">
+                      <img
+                        src="assets/img/review-2.jpg"
+                        alt="review_image"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <!-- Reviewer Name and Profession -->
+                      <div class="ml-2">
+                        <p class="text-yellow-500 uppercase">Michael Patel</p>
+                        <p>Sr. Software Engineer</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                </li>
+                <!-- Review 3 | swiper-slide -->
+                <li class="swiper-slide">
+                  <!-- Review 3 Container -->
+                  <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                    <!-- Review Comment -->
+                    <p class="font-lobster">
+                      Beautiful plants that instantly brightened up my café.
+                      Customers love the greenery, and so do I!
+                    </p>
+                    <!-- Reviewer - image -->
+                    <div class="flex items-center">
+                      <img
+                        src="assets/img/review-3.jpg"
+                        alt="review_image"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <!-- Reviewer Name and Profession -->
+                      <div class="ml-2">
+                        <p class="text-yellow-500 uppercase">Emma Collins</p>
+                        <p>Café Owner</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                </li>
+                <!-- Review 4 | swiper-slide -->
+                <li class="swiper-slide">
+                  <!-- Review 1 Container -->
+                  <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                    <!-- Review Comment -->
+                    <p class="font-lobster">
+                      As a beginner, the care guides were a lifesaver. My peace
+                      lily is growing beautifully—highly recommend!
+                    </p>
+                    <!-- Reviewer - image -->
+                    <div class="flex items-center">
+                      <img
+                        src="assets/img/review-4.jpg"
+                        alt="review_image"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <!-- Reviewer Name and Profession -->
+                      <div class="ml-2">
+                        <p class="text-yellow-500 uppercase">Priya Sharma</p>
+                        <p>Home Baker</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- swiper pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -479,6 +618,7 @@
     <!-- Scroll up -->
 
     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- ScrollReveal -->
 

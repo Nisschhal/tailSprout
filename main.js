@@ -1,3 +1,5 @@
+// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"
+//
 /* --------------- TOGGLE BUTTON ----------------- */
 const navMenu = document.getElementById("nav-menu")
 const navLinks = document.querySelectorAll(".nav-link")
@@ -22,5 +24,34 @@ navLinks.forEach((link) => {
 // CHANGE BACKGROUND HEADER
 
 // SWIPER
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  speed: 400,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  grabCursor: true,
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+})
 
 // SCROLL SECTIONS ACTIVE LINK
