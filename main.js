@@ -97,3 +97,35 @@ const activeLink = () => {
 }
 
 window.addEventListener("scroll", activeLink)
+
+// SCROLL REVEAL
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 300,
+  reset: true,
+})
+
+sr.reveal(
+  ".hero_slogon, .about_top, .popular_top, .reviews_top, .reviews_swiper, .footer_socials, .footer_content, .footer_right"
+)
+// hero section: right image
+sr.reveal(".hero_img", { delay: 500, scale: 0.5 })
+
+// service section: cards
+sr.reveal(".service_card", { interval: 100 })
+
+// popular sections: plants
+sr.reveal(".popular_plant", { interval: 100 })
+
+// about us section: img content
+sr.reveal(".about_img", { delay: 1000, origin: "right" })
+sr.reveal(".about_item_1-img, .about_item_2-content", { origin: "left" })
+sr.reveal(".about_item_2-img, .about_item_1-content", {
+  delay: 500,
+  origin: "right",
+})
+
+// review section : top left leaf
+sr.reveal(".reviews_leaf, .footer_floral", { delay: 1000, origin: "left" })

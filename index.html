@@ -73,16 +73,16 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="">
       <!-- --------Hero------------- -->
       <section id="home" class="relative">
         <!-- Hero Container -->
         <div class="container">
-          <!-- Bolb center -->
+          <!-- Bulb center -->
           <div
             class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           ></div>
-          <!-- Bolb right bottom -->
+          <!-- Bulb right bottom -->
           <div
             class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0"
           ></div>
@@ -90,7 +90,7 @@
           <!-- Hero Flex Container -->
           <div class="flex flex-col lg:flex-row items-center gap-5">
             <!--  Content -->
-            <div class="w-full space-y-5 lg:w-1/2">
+            <div class="hero_slogon w-full space-y-5 lg:w-1/2">
               <!-- Hero Heading -->
               <h1>
                 <span class="text-yellow-500">Sprout</span> a positive <br />
@@ -142,7 +142,7 @@
 
             <!-- Image -->
             <div class="w-full relative lg:w-1/2">
-              <img src="assets/img/home.png" alt="home_image" />
+              <img src="assets/img/home.png" alt="home_image"  class="hero_img" />
 
               <!-- leaf -->
               <div class="absolute top-0 right-0 opacity-30 animate-movingY">
@@ -172,7 +172,7 @@
         >
           <!-- Card 1 -->
           <div
-            class="border border-green-900 cursor-pointer p-5 rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
+            class="service_card border border-green-900 cursor-pointer p-5 service_card rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
           >
             <div class="flex gap-5 items-center">
               <i class="ri-truck-line text-3xl md:text-4xl lg:text-5xl"></i>
@@ -189,7 +189,7 @@
 
           <!-- Card 2 -->
           <div
-            class="border border-green-900 cursor-pointer p-5 rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
+            class="service_card border border-green-900 cursor-pointer p-5 rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
           >
             <div class="flex gap-5 items-center">
               <i
@@ -207,7 +207,7 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="border border-green-900 cursor-pointer p-5 rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
+            class="service_card border border-green-900 cursor-pointer p-5 rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
           >
             <div class="flex gap-5 items-center">
               <i class="ri-plant-line text-3xl md:text-4xl lg:text-5xl"></i>
@@ -221,9 +221,9 @@
               Accusantium, ut.
             </p>
           </div>
-          <!-- Card 1 -->
+          <!-- Card 4 -->
           <div
-            class="border border-green-900 cursor-pointer p-5 rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
+            class="service_card border border-green-900 cursor-pointer p-5 rounded-md hover:-translate-y-1 hover:shadow-2xl duration-300 space-y-5"
           >
             <div class="flex gap-5 items-center">
               <i
@@ -249,13 +249,13 @@
           <img
             src="assets/img/leaf-3.png"
             alt="leaf_image"
-            class="w-40 md:w-52 xl:w-64"
+            class="about_img w-40 md:w-52 xl:w-64"
           />
         </div>
 
         <!-- About__Heading -->
         <div
-          class="flex flex-col items-center gap-3 text-center mb-10 md:mb:20"
+          class="about_top flex flex-col items-center gap-3 text-center mb-10 md:mb:20"
         >
           <h2 class="title">About Us</h2>
           <p class="max-w-2xl">Follow instruction for more</p>
@@ -265,7 +265,7 @@
           <!-- item 1 -->
           <div class="flex flex-col lg:flex-row gap-5">
             <!-- image -->
-            <div class="w-full lg:w-1/2">
+            <div class="about_item_1-img w-full lg:w-1/2">
               <img
                 src="assets/img/plant-1.png"
                 alt="about_image"
@@ -273,8 +273,8 @@
               />
             </div>
             <!-- Content -->
-            <div class="w-full lg:w-1/2">
-              <div class="space-y-5">
+            <div class="about_item_1-content w-full lg:w-1/2">
+              <div class="  space-y-5">
                 <!-- Content_Heading -->
                 <h3>
                   Make your <span class="text-yellow-500">organic</span> <br />
@@ -296,15 +296,15 @@
           <!-- item 2 -->
           <div class="flex flex-col lg:flex-row lg:flex-row-reverse gap-5">
             <!-- image -->
-            <div class="w-full lg:w-1/2">
+            <div class="about_item_2-img w-full lg:w-1/2">
               <img
                 src="assets/img/plant-2.png"
                 alt="about_image"
-                class="w-full sm:w-2/3 lg:w-full xl:w-2/3"
+                class=" w-full sm:w-2/3 lg:w-full xl:w-2/3"
               />
             </div>
             <!-- Content -->
-            <div class="w-full lg:w-1/2">
+            <div class="about_item_2-content w-full lg:w-1/2">
               <div class="space-y-5">
                 <!-- Content_Heading -->
                 <h3>
@@ -330,7 +330,7 @@
       <!-- POPULAR -->
       <section id="popular" class="bg-green-900">
         <!-- Popular__Heading -->
-        <div class="flex flex-col items-center gap-3 text-center mb-40">
+        <div class="popular_top flex flex-col items-center gap-3 text-center mb-40">
           <h2 class="title">Your Choice Plant</h2>
           <p class="max-w-2xl">Follow instruction for more</p>
         </div>
@@ -340,7 +340,7 @@
           class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 lg:grid-cols-2 xl:grid-cols-4"
         >
           <!--Popular Card 1-->
-          <div class="group popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+          <div class="popular_plant group popular_card bg-green-950 p-10 pt-24 rounded-md relative">
             <!-- Card__img -->
             <img
               src="assets/img/cart-1.png"
@@ -371,7 +371,7 @@
           </div>
 
           <!--Popular Card 2-->
-          <div class="group popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+          <div class="popular_plant group popular_card bg-green-950 p-10 pt-24 rounded-md relative">
             <!-- Card__img -->
             <img
               src="assets/img/cart-2.png"
@@ -402,7 +402,7 @@
           </div>
 
           <!--Popular Card 3-->
-          <div class="group popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+          <div class="popular_plant group popular_card bg-green-950 p-10 pt-24 rounded-md relative">
             <!-- Card__img -->
             <img
               src="assets/img/cart-3.png"
@@ -431,8 +431,9 @@
               </button>
             </div>
           </div>
+
           <!--Popular Card 4-->
-          <div class="group  popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+          <div class="popular_plant group  popular_card bg-green-950 p-10 pt-24 rounded-md relative">
             <!-- Card__img -->
             <img
               src="assets/img/cart-4.png"
@@ -468,7 +469,7 @@
       <section id="reviews" class="relative mb-20 md:mb-28 overflow-hidden">
         <!-- Review Corner floating leaf -->
 
-        <div class="absolute -top-6 -left-12 opacity-50">
+        <div class="reviews_leaf absolute -top-6 -left-12 opacity-50">
           <img
             src="assets/img/leaf-4.png"
             alt="leaf_image"
@@ -477,7 +478,7 @@
         </div>
         <!-- Review__Heading  -->
         <div
-          class="flex flex-col items-center gap-3 text-center mb-10 md:mb:20"
+          class="reviews_top flex flex-col items-center gap-3 text-center mb-10 md:mb:20"
         >
           <h2 class="title">Customer Reviews</h2>
           <p class="max-w-2xl">Your Home, Our Plants, Perfect Harmony</p>
@@ -485,7 +486,7 @@
 
         <!-- SWIPER -->
         <!-- Review__Container -->
-        <div class="container">
+        <div class="reviews_swiper container">
           <!-- Review__Container_Content -->
           <div class="py-12">
             <!-- container-content | swiper container-->
@@ -638,7 +639,7 @@
       </div>
 
       <!-- social icons -->
-      <div class="container z-20  mt-16 mb-10">
+      <div class="footer_socials container z-20  mt-16 mb-10">
         <div class="border-b border-green-500 relative">
           <div
             class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto"
@@ -664,7 +665,7 @@
       <!-- content -->
 
       <div
-        class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start"
+        class="footer_content container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start"
       >
         <!-- Item 1: Logo-->
         <div>
@@ -734,7 +735,7 @@
       </div>
       <!-- copyright -->
 
-      <div class="container">
+      <div class="footer_right container">
         <div class="text-center mt-10 opacity-50"> 
           Copyright &copy; 2024 SageCraft. All rights reserved.
 
@@ -742,7 +743,7 @@
       </div>
 
       <!-- floral image -->
-      <div class="absolute z-10 bottom-0 left-0 opacity-20 pointer-events-none">
+      <div class="footer_floral absolute z-10 bottom-0 left-0 opacity-20 pointer-events-none">
         <img src="assets/img/floral-1.png" class="w-full lg:w-1/2" alt="floral_image">
        </div>
     </footer>
@@ -757,6 +758,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- ScrollReveal -->
+     <script src="./assets/js/scrollreveal.min.js"></script>
 
     <!-- mainjs -->
     <script src="main.js"></script>
