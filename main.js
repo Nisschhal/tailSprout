@@ -38,9 +38,9 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   const header = document.getElementById("navbar")
   if (this.scrollY >= 50) {
-    header.classList.add("drop-shadow-xl")
+    header.classList.add("border-b", "border-yellow-500", "drop-shadow-xl")
   } else {
-    header.classList.remove("drop-shadow-xl")
+    header.classList.remove("border-b", "border-yellow-500", "drop-shadow-xl")
   }
 })
 
@@ -76,3 +76,24 @@ const swiper = new Swiper(".swiper", {
 })
 
 // SCROLL SECTIONS ACTIVE LINK
+const activeLink = () => {
+  const sections = document.querySelectorAll("section")
+  const navLinks = document.querySelectorAll(".nav-link")
+
+  let current = "home"
+  sections.forEach((secion) => {
+    const sectionTop = secion.offsetTop
+    if (this.scrollY >= sectionTop - 60) {
+      current = secion.getAttribute("id")
+    }
+  })
+
+  navLinks.forEach((item) => {
+    item.classList.remove("active")
+    if (item.href.includes(current)) {
+      item.classList.add("active")
+    }
+  })
+}
+
+window.addEventListener("scroll", activeLink)
