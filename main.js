@@ -35,6 +35,15 @@ window.addEventListener("scroll", () => {
 
 // CHANGE BACKGROUND HEADER
 
+window.addEventListener("scroll", () => {
+  const header = document.getElementById("navbar")
+  if (this.scrollY >= 50) {
+    header.classList.add("drop-shadow-xl")
+  } else {
+    header.classList.remove("drop-shadow-xl")
+  }
+})
+
 // SWIPER
 const swiper = new Swiper(".swiper", {
   // Optional parameters

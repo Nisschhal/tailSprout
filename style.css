@@ -741,14 +741,6 @@ video {
   top: 50%;
 }
 
-.-bottom-4{
-  bottom: -1rem;
-}
-
-.-bottom-1\/4{
-  bottom: -25%;
-}
-
 .isolate{
   isolation: isolate;
 }
@@ -2815,6 +2807,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.drop-shadow-xl{
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .grayscale{
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2986,6 +2983,11 @@ body{
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
 
+.active{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
 section{
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -3095,23 +3097,7 @@ h3{
   top: -2rem;
 }
 
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.popular_card:hover img{
-  animation: bounce 1s infinite;
-}
-
-/* Swiper pagination bullet */
+/* Swiper paginatio n bullet */
 
 .swiper-pagination-bullet{
   height: 0.75rem;
@@ -3219,6 +3205,16 @@ h3{
 .group:hover .group-hover\:translate-x-2{
   --tw-translate-x: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes move{
+  50%{
+    transform: translateY(-1rem);
+  }
+}
+
+.group:hover .group-hover\:animate-movingY{
+  animation: move 3s linear infinite;
 }
 
 .group:hover .group-hover\:duration-300{
