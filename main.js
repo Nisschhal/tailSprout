@@ -21,6 +21,18 @@ navLinks.forEach((link) => {
 
 // SHOW SCROLL UP
 
+const scrollUp = document.getElementById("scroll-up")
+
+window.addEventListener("scroll", () => {
+  if (this.scrollY >= 300) {
+    scrollUp.classList.remove("-bottom-1/5")
+    scrollUp.classList.add("bottom-4")
+  } else {
+    scrollUp.classList.add("-bottom-1/5")
+    scrollUp.classList.remove("bottom-4")
+  }
+})
+
 // CHANGE BACKGROUND HEADER
 
 // SWIPER

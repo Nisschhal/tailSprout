@@ -19,38 +19,39 @@ module.exports = {
         md: "32px",
       },
     },
-    keyframes: {
-      move: {
-        "50%": {
-          transform: "translateY(-1rem)",
+    extend: {
+      keyframes: {
+        move: {
+          "50%": {
+            transform: "translateY(-1rem)",
+          },
+        },
+        rotate: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+        scale: {
+          "0%": {
+            transform: "scale(.8)",
+          },
+          "50%": {
+            transform: "scale(1.2)",
+          },
+          "100%": {
+            transform: "scale(.8)",
+          },
         },
       },
-      rotate: {
-        "0%": {
-          transform: "rotate(0deg)",
-        },
-        "100%": {
-          transform: "rotate(360deg)",
-        },
-      },
-      scale: {
-        "0%": {
-          transform: "scale(.8)",
-        },
-        "50%": {
-          transform: "scale(1.2)",
-        },
-        "100%": {
-          transform: "scale(.8)",
-        },
+      animation: {
+        movingY: "move 3s linear infinite",
+        rotating: "rotate 15s linear infinite",
+        scaleUp: "scale 15s linear infinite",
       },
     },
-    animation: {
-      movingY: "move 3s linear infinite",
-      rotating: "rotate 15s linear infinite",
-      scaleUp: "scale 15s linear infinite",
-    },
-    extend: {},
   },
   plugins: [],
 }

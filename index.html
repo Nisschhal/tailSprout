@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,7 +45,7 @@
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#popular" class="nav-link">Popular</a></li>
-            <li><a href="#review" class="nav-link">Review</a></li>
+            <li><a href="#reviews" class="nav-link">Review</a></li>
           </ul>
 
           <div class="absolute -right-10 bottom-5">
@@ -67,7 +67,7 @@
         <!-- Hamburger Menu Icon -->
         <!-- lg:hidden -->
         <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
-          <i class="ri-menu-4-line" id="hamburger"> </i>
+          <i class="ri-menu-4-line"  id="hamburger"> </i>
         </div>
       </nav>
     </header>
@@ -340,12 +340,12 @@
           class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 lg:grid-cols-2 xl:grid-cols-4"
         >
           <!--Popular Card 1-->
-          <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+          <div class=" popular_card bg-green-950 p-10 pt-24 rounded-md relative">
             <!-- Card__img -->
             <img
               src="assets/img/cart-1.png"
               alt="popular_image"
-              class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500"
+              class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 "
             />
 
             <!-- Card__heading -->
@@ -465,7 +465,7 @@
       </section>
 
       <!-- REVIEW -->
-      <section id="review " class="relative mb-20 md:mb-28 overflow-hidden">
+      <section id="reviews" class="relative mb-20 md:mb-28 overflow-hidden">
         <!-- Review Corner floating leaf -->
 
         <div class="absolute -top-6 -left-12 opacity-50">
@@ -606,7 +606,7 @@
     <footer class="bg-yellow-100 text-green-950 pt-20 pb-10 md:pt-28 relative">
       <!-- newsletter -->
       <div
-        class="container text-white absolute top-0 right-0 left-0 -translate-y-1/2"
+        class="container cursor-pointer text-white absolute top-0 right-0 left-0 -translate-y-1/2"
       >
         <!-- Content -->
         <div class="bg-green-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
@@ -638,7 +638,7 @@
       </div>
 
       <!-- social icons -->
-      <div class="container mt-16 mb-10">
+      <div class="container z-20  mt-16 mb-10">
         <div class="border-b border-green-500 relative">
           <div
             class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto"
@@ -708,19 +708,20 @@
 
         <!-- Item 3 -->
         <div class="">
-          <p class="mb-5 font-bold text-xl">Popular Services</p>
+          <p class="mb-5 font-bold text-xl ">Popular Services</p>
           <div class="flex flex-col gap-1">
-            <a href="#">Tree Planting</a>
-            <a href="#">Grass Cutting</a>
-            <a href="#">Weeds Control</a>
-            <a href="#">Project</a>
+            
+            <a href="#"  class="hover:text-yellow-500 cursor-pointer duration-300">Tree Planting</a>
+            <a href="#"  class="hover:text-yellow-500 cursor-pointer duration-300">Grass Cutting</a>
+            <a href="#"  class="hover:text-yellow-500 cursor-pointer duration-300">Weeds Control</a>
+            <a href="#"  class="hover:text-yellow-500 cursor-pointer duration-300">Project</a>
           </div>
         </div>
           <!-- Item 4 -->
           <div class="">
             <p class="mb-5 font-bold text-xl">Contact Us</p>
             <div class="flex flex-col gap-1">
-              <a href="tel:+977-9818275115">+977-9818275115</a>
+              <a href="https://api.whatsapp.com/send?phone=9818275115">+977-9818275115</a>
               <a href="mailto:nisal.dev@gmail.com">nisal.dev@gmail.com</a>
               <br/>
               <p>Kathmandu, Nepal</p>
@@ -741,12 +742,16 @@
       </div>
 
       <!-- floral image -->
-       <div class="absolute bottom-0 left-0 opacity-20 pointer-events-auto">
+      <div class="absolute z-10 bottom-0 left-0 opacity-20 pointer-events-none">
         <img src="assets/img/floral-1.png" class="w-full lg:w-1/2" alt="floral_image">
        </div>
     </footer>
 
     <!-- Scroll up -->
+     <a href="#home" class="fixed right-4 -bottom-1/5 bg-yellow-500 shadow-md inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up">
+
+      <i class="ri-arrow-up-line"></i>
+     </a>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
